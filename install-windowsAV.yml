@@ -7,6 +7,12 @@
 
   tasks:
 
+    - name: Create a files directory for saving assets
+      ansible.builtin.file:
+        path: files
+        mode: '0755'
+        state: directory
+         
     - name: Get installer and support files from repository if not present in the source tree
       ansible.builtin.get_url:
         url: "{{ repo_url }}/{{ item }}"
