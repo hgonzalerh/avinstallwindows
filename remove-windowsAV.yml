@@ -5,8 +5,8 @@
     config_file: agent_config.json
     repo_url: 'http://astolfo.poorware.tk/binaries/'
 
+  #Aqui empiezan las tareas
   tasks:
-
     - name: Create a files directory for saving assets
       ansible.builtin.file:
         path: files
