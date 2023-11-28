@@ -1,0 +1,8 @@
+- hosts: localhost
+  tasks:
+    - name: Run transformation on a file
+      ansible.builtin.shell:
+        cmd: >
+          sed s/Number/Numero/
+          machine-readable-business-employment-data-jun-2023-quarter.csv
+          > transformado.csv
