@@ -1,0 +1,13 @@
+- hosts: localhost
+  tasks:
+    - name: Read users from CSV file and return a dictionary
+      community.general.read_csv:
+        path: machine-readable-business-employment-data-jun-2023-quarter.csv
+        key: Data_value
+        unique: false
+      register: series
+
+    - name: Print CSV
+      ansible.builtin.debug:
+        var: series.list
+
