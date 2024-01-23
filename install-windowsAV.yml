@@ -6,7 +6,6 @@
     repo_url: 'http://astolfo.poorware.tk/binaries/'
 
   tasks:
-
     - name: Create a files directory for saving assets
       ansible.builtin.file:
         path: files
