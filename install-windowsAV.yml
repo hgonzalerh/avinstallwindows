@@ -1,4 +1,4 @@
-- name: Install a package on Windows
+- name: Install a package on Windows - changed
   hosts: windows
   vars:
     installer: xagtSetup_35.31.22_universal.msi
