@@ -3,7 +3,7 @@
   vars:
     installer: xagtSetup_35.31.22_universal.msi
     config_file: agent_config.json
-    repo_url: 'http://astolfo.poorware.tk/binaries/'
+    # repo_url: 
 
   tasks:
 
