@@ -1,0 +1,8 @@
+- hosts: windows
+  gather_facts: false
+  tasks:
+    - name: Apply local security policy
+      community.windows.win_security_policy:
+        section: Account Policies
+        key: Password Policy
+        value: Enabled
